@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Grayscale Toggler",
+  "name": "NoirLens",
   "version": "1.0",
   "description": "This browser extension toggles whatever webpage you want to be black and white!",
   "permissions": ["tabs", "storage", "activeTab"],
