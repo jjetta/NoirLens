@@ -1,4 +1,5 @@
 const toggleSwitch = document.getElementById("toggleSwitch")
+const settingsButton = document.getElementById("settingsButton")
 
 toggleSwitch.addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -6,3 +7,6 @@ toggleSwitch.addEventListener("click", () => {
   });
 });
 
+settingsButton.addEventListener("click", () => {
+  window.open('settings.html') 
+})
