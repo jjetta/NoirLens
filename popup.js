@@ -3,7 +3,6 @@ const settingsButton = document.getElementById("settingsButton")
 
 const urlForm = document.getElementById("urlForm")
 const urlInput = document.getElementById("urlInput")
-const urlList = document.getElementById("urlList")
 
 let urls = []
 
@@ -14,15 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateUrlList();
 })
 
-// Update the displayed URL list 
-function updateUrlList(){
-  urlList.innerHTML = ''
-  urls.forEach(url => {
-    const li = document.createElement('li')
-    li.textContent = url
-    urlList.appendChild(li)
-  })
-}
 
 // Handle form submission 
 urlForm.addEventListener('submit', (event) => {
