@@ -7,7 +7,7 @@ NoirLens is a browser extension designed to help you take control of your online
 - **Grayscale Filtering**: Apply a sleek grayscale filter to your favorite websites, making them less visually stimulating and more calming.
 - **Toggle Functionality**: Add or remove websites from your grayscale filter list effortlessly, giving you complete control over which sites are affected.
 - **Settings Menu**: See your full list of sites, remove sites from toggle list.
-- **Time Block **: Lock websites to be filtered for an hour, a day, or maybe even a week!
+- **Time Block**: Lock websites to be filtered for an hour, a day, or maybe even a week!
 
 ## 🌐 Current Availability:
 
