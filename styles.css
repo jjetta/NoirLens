@@ -1,7 +1,10 @@
-body {
+#popupId {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 10px;
+  background-color: silver !important;
+  width: 600px;
+  height: 400px;
 }
 
 h1 {

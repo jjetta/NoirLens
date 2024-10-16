@@ -10,3 +10,5 @@ toggleSwitch.addEventListener("click", () => {
 settingsButton.addEventListener("click", () => {
   window.open('settings.html') 
 })
+
+

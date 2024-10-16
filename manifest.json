@@ -3,7 +3,7 @@
   "name": "NoirLens",
   "version": "1.0",
   "description": "Toggle whatever webpage you want to be black and white!",
-  "permissions": ["tabs", "storage", "activeTab"],
+  "permissions": ["tabs", "storage", "activeTab", "windows"],
   "action": {
     "default_popup": "popup.html"
   },
