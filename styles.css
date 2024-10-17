@@ -1,61 +1,22 @@
-#popupId {
+#popup {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 10px;
-  background-color: silver !important;
+  background-color: black !important;
   width: 500px;
   height: 300px;
 }
 
-h1 {
+h2 {
   font-size: 16px;
   margin-bottom: 10px;
+  color: silver
 }
 
 button {
   padding: 8px 16px;
   font-size: 14px;
-}
-
-/* The switch container */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* Hide default checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider (round part of the switch) */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-/* Round slider */
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
+  color: silver
 }
 
 /* When the checkbox is checked, change the background color */
@@ -68,3 +29,20 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px; /* Adjust the icon size */
+  padding: 0;
+}
+
+p {
+  color: silver 
+}

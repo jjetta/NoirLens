@@ -1,4 +1,4 @@
-const toggleSwitch = document.getElementById("toggleSwitch")
+const toggleButton = document.getElementById("toggleButton")
 const settingsButton = document.getElementById("settingsButton")
 
 const urlForm = document.getElementById("urlForm")
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   urls = storedUrls
   updateUrlList();
 })
-
 
 // Handle form submission 
 urlForm.addEventListener('submit', (event) => {
@@ -30,7 +29,7 @@ urlForm.addEventListener('submit', (event) => {
   }
 })
 
-toggleSwitch.addEventListener("click", () => {
+toggleButton.addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     chrome.tabs.sendMessage(tabs[0].id, { action: "toggleGrayscale" });
   });
