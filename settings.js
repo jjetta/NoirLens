@@ -1,4 +1,5 @@
 const urlList = document.getElementById("urlList")
+const clearButton = document.getElementById("clearButton")
 
 // Update the displayed URL list 
 function updateUrlList(){
@@ -15,4 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const storedUrls = JSON.parse(localStorage.getItem('urls')) || []
     urls = storedUrls
     updateUrlList();
+})
+
+clearButton.addEventListener("click", () => {
+  urls = []
 })
