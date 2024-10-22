@@ -19,5 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 clearButton.addEventListener("click", () => {
+  urlList.innerHTML = ''
   urls = []
+  localStorage.setItem('urls', JSON.stringify(urls));
 })
