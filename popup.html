@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body id="popup">
+<body>
   <div class="header">
     <h2>NoirLens</h2>
     <button id="toggleButton" class="icon-button">
@@ -23,12 +23,15 @@
         </span>
     </button>
   </div>
-  <p> Enter a url below to add it to your custom list! </p>
+  <p>Add a URL below to include it in your custom list!</p>
   <form id="urlForm">
     <input type="text" id="urlInput" placeholder="URL goes here..." required>
     <button type="submit" class="btn btn-secondary">Add Url</button>
   </form>
-  <button type="button" class="btn btn-secondary" id="settingsButton">Settings</button>
+  <hr id="footer-hr">
+  <div id="footer">
+    <a href="settings.html" target="_blank">Settings</a>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

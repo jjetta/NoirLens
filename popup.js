@@ -1,5 +1,4 @@
 const toggleButton = document.getElementById("toggleButton")
-const settingsButton = document.getElementById("settingsButton")
 
 const urlForm = document.getElementById("urlForm")
 const urlInput = document.getElementById("urlInput")
@@ -34,9 +33,5 @@ toggleButton.addEventListener("click", () => {
     chrome.tabs.sendMessage(tabs[0].id, { action: "toggleGrayscale" });
   });
 });
-
-settingsButton.addEventListener("click", () => {
-  window.open('settings.html') 
-})
 
 
