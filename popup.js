@@ -28,10 +28,20 @@ urlForm.addEventListener('submit', (event) => {
   }
 })
 
-toggleButton.addEventListener("click", () => {
+// Get the components of the URL
+const protocol = window.location.protocol; // e.g., "https:"
+const host = window.location.host; // e.g., "www.example.com"
+
+// Combine them to get everything except the path
+const baseUrl = `${protocol}//${host}`
+
+// This event listener will check if the current webpage is in the toggle list
+document.addEventListener("DOMContentLoaded", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    chrome.tabs.sendMessage(tabs[0].id, { action: "toggleGrayscale" });
-  });
-});
+    if (currentWindow.location.startsWith(baseUrl)) {
+        chrome.tabs.sendMessage(tabs[0].id, { action: "toggleGrayscale" })
+    }
+  })
+})
 
 

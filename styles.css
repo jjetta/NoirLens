@@ -17,7 +17,7 @@ body {
 
 }
 
-h2 {
+h4 {
   font-size: 16px;
   margin-bottom: 10px;
   color: silver
@@ -78,8 +78,4 @@ hr {
 #footer,#header,#header>div,#header label {
   display: flex;
   align-items: center
-}
-
-#header {
-  justify-content: space-between
 }
