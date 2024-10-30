@@ -1,9 +1,10 @@
-const toggleButton = document.getElementById("toggleButton")
+import {updateUrlList} from '../settings/settings.js'
 
+const toggleButton = document.getElementById("toggleButton")
 const urlForm = document.getElementById("urlForm")
 const urlInput = document.getElementById("urlInput")
 
-let urls = []
+export let urls = []
 
 // Load existing URLs from local storage when popup opens 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs.length > 0) {
       const currentUrl = tabs[0].url
-      if (currentUrl.startsWith(baseUrl)) {
+      if (currentUrl.startsWith(baseUrl) && urls.includes(baseUrl)) {
         console.log("baseUrl: `$baseUrl`")
         console.log("currentUrl: `$currentUrl`")
         chrome.tabs.sendMessage(tabs[0].id, { action: "toggleGrayscale" })

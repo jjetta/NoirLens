@@ -1,8 +1,10 @@
+import { urls } from "../popup/popup.js"
+
 const urlList = document.getElementById("urlList")
 const clearButton = document.getElementById("clearButton")
 
 // Update the displayed URL list 
-function updateUrlList(){
+export function updateUrlList(){
   urlList.innerHTML = ''
   urls.forEach(url => {
     const li = document.createElement('li')

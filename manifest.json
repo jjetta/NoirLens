@@ -5,7 +5,7 @@
   "description": "Toggle whatever webpage you want to be black and white!",
   "permissions": ["tabs", "storage", "activeTab", "windows"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   },
   "background": {
     "service_worker": "background.js"
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content-scripts/content.js"]
     }
   ] 
 }
