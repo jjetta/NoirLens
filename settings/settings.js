@@ -11,12 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 clearButton.addEventListener('click', () => {
-    urlList.innerHTML = ''; // Clear the URL list
+    urlList.innerHTML = ''; // Clear the URL list 
     urls = []; // Reset the urls array
-    localStorage.setItem('urls', JSON.stringify(urls)); // Update localStorage
-    console.log("URLs cleared");
-})
 
+    chrome.storage.sync.set({"urls": urls}, () => {
+      console.log("URLs cleared");
+    })
+})
 
 // Update the displayed URL list
 function updateUrlList(urls) {
